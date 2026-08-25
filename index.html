@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Literário</title>
+
     <style>
         header {
-            background-color: #3b2794 color(#FFFFFF) text-align: center;
+            background-color: #18b99e;
+            color: #FFFFFF;
+            text-align: center;
             max-width: 800px;
             margin: 0 auto;
             padding: 16px;
@@ -16,7 +19,7 @@
 
         main {
             background-color: #FFFFFF;
-            color: #3b2794;
+            color: #18b99e;
             max-width: 800px;
             margin: 0 auto;
             padding: 16px;
@@ -24,86 +27,253 @@
 
         article {
             display: flex;
+            margin-bottom: 25px;
         }
 
         img {
             width: 80px;
             height: 80px;
+            margin-right: 15px;
         }
 
         .artigo-autor {
             font-weight: bold;
         }
+
+        /* Área de comentários */
+        .comentarios {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px solid #56b498;
+            border-radius: 10px;
+        }
+
+        .comentarios h2 {
+            margin-top: 0;
+        }
+
+        .comentarios input,
+        .comentarios textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #56b498;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .comentarios textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        .comentarios button {
+            background-color: #18b99e;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .comentarios button:hover {
+            background-color: #12957f;
+        }
+
+        .comentario {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-left: 4px solid #18b99e;
+            color: #333333;
+        }
+
+        .comentario strong {
+            color: #18b99e;
+        }
     </style>
 </head>
 
 <body>
+
     <header>
         <h1>Meu blog literário</h1>
         <p>Vou compartilhar um pouco sobre livros.</p>
     </header>
+
     <main>
-        <article>
-            <img src="Gemini_Generated_Image_3zvrlm3zvrlm3zvr (1).png" alt="" Logotipo circular para blog de livros com
-                um livro aberto em tons de bege e dourado ao centro, acompanhado por uma lua crescente e uma pena no
-                topo, sobre um fundo azul-escuro. Abaixo do livro, está escrito 'Book Blog' ."">
-            <div>
 
+        <article>
+            <img src="Gemini_Generated_Image_3zvrlm3zvrlm3zvr (1).png" alt="Logotipo do blog de livros">
+
+            <div>
                 <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Júlia Rodrigues Lima</p>
-                <p>Boas vindas ao meu novo blog! aqui vou compartilham algumas curiosidades e dicas sobre livros.</p>
-                <button>Gostei! <span>0</span></button>
-                <button>Não gostei! <span>0</span></button>
-            </div>
-        </article>
-        <article>
-            <img src="Gemini_Generated_Image_3zvrlm3zvrlm3zvr (1).png" alt="" Logotipo circular para blog de livros com
-                um livro aberto em tons de bege e dourado ao centro, acompanhado por uma lua crescente e uma pena no
-                topo, sobre um fundo azul-escuro. Abaixo do livro, está escrito 'Book Blog' ."">
-            <div>
 
-                <h2>Meu segundo post</h2>
-                <p class="artigo-autor">Por: Júlia Rodrigues Lima</p>
-                <p>Vocês sabiam que os livros têm o poder de funcionar como portais e espelhos ao mesmo tempo. Como
-                    portais, eles transportam o leitor para universos distantes, épocas passadas ou futuros imaginados,
-                    permitindo vivenciar realidades totalmente diferentes sem sair do lugar. Como espelhos, refletem as
-                    emoções, dúvidas e verdades da própria experiência humana, ajudando a compreender melhor a si mesmo
-                    e ao mundo ao redor.</p>
-                <button>Gostei! <span>0</span></button>
-                <button>Não gostei! <span>0</span></button>
+                <p class="artigo-autor">
+                    Por: Júlia Rodrigues Lima
+                </p>
+
+                <p>
+                    Boas vindas ao meu novo blog! aqui vou compartilham
+                    algumas curiosidades e dicas sobre livros.
+                </p>
+
+                <button>
+                    Gostei! <span>0</span>
+                </button>
+
+                <button>
+                    Não gostei! <span>0</span>
+                </button>
             </div>
         </article>
+
+
+        <article>
+            <img src="Gemini_Generated_Image_3zvrlm3zvrlm3zvr (1).png" alt="Logotipo do blog de livros">
+
+            <div>
+                <h2>Meu segundo post</h2>
+
+                <p class="artigo-autor">
+                    Por: Júlia Rodrigues Lima
+                </p>
+
+                <p>
+                    Vocês sabiam que os livros têm o poder de funcionar
+                    como portais e espelhos ao mesmo tempo. Como portais,
+                    eles transportam o leitor para universos distantes,
+                    épocas passadas ou futuros imaginados, permitindo
+                    vivenciar realidades totalmente diferentes sem sair
+                    do lugar. Como espelhos, refletem as emoções, dúvidas
+                    e verdades da própria experiência humana, ajudando a
+                    compreender melhor a si mesmo e ao mundo ao redor.
+                </p>
+
+                <button>
+                    Gostei! <span>0</span>
+                </button>
+
+                <button>
+                    Não gostei! <span>0</span>
+                </button>
+            </div>
+        </article>
+
 
         <!-- VÍDEO DO YOUTUBE -->
+
         <h2>O incrível poder da leitura</h2>
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/BtFHTJZuOWE"
-            title="O incrível poder da leitura" frameborder="0"
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BtFHTJZuOWE"
+            title="O incrível poder da leitura"
+            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
         </iframe>
 
-    </main>
-</body>
-<script>
-    const botoes = document.querySelectorAll("button");
 
-    botoes.forEach(function (botao) {
-        let curtiu = false;
-        botao.addEventListener("click", botãoClicado);
-        function botãoClicado() {
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
-            if (curtiu === false) {
-                texto.textContent++ /;
-                curtiu = true;
-            } else {
-                texto.textContent--;
-                curtiu = false
+        <!-- ÁREA DE COMENTÁRIOS -->
+
+        <div class="comentarios">
+
+            <h2>Deixe seu comentário</h2>
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu nome">
+
+            <textarea
+                id="comentarioTexto"
+                placeholder="Escreva seu comentário...">
+            </textarea>
+
+            <button onclick="adicionarComentario()">
+                Enviar comentário
+            </button>
+
+            <div id="listaComentarios"></div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        /* BOTÕES GOSTEI E NÃO GOSTEI */
+
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function (botao) {
+
+            let curtiu = false;
+
+            if (
+                botao.textContent.includes("Gostei!") ||
+                botao.textContent.includes("Não gostei!")
+            ) {
+
+                botao.addEventListener("click", function () {
+
+                    let texto = botao.querySelector("span");
+
+                    if (curtiu === false) {
+
+                        texto.textContent++;
+                        curtiu = true;
+
+                    } else {
+
+                        texto.textContent--;
+                        curtiu = false;
+
+                    }
+
+                });
+
             }
+
+        });
+
+
+        /* SISTEMA DE COMENTÁRIOS */
+
+        function adicionarComentario() {
+
+            let nome = document.getElementById("nome").value;
+            let comentario = document.getElementById("comentarioTexto").value;
+
+            if (nome === "" || comentario === "") {
+
+                alert("Preencha seu nome e seu comentário.");
+
+                return;
+            }
+
+            let novoComentario = document.createElement("div");
+
+            novoComentario.classList.add("comentario");
+
+            novoComentario.innerHTML =
+                "<strong>" + nome + "</strong><br>" +
+                comentario;
+
+            document
+                .getElementById("listaComentarios")
+                .appendChild(novoComentario);
+
+            document.getElementById("nome").value = "";
+            document.getElementById("comentarioTexto").value = "";
+
         }
 
-    })
-</script>
+    </script>
+
+</body>
 
 </html>
